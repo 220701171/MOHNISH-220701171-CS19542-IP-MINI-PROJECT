@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycler Management</title>
+    <link rel="stylesheet" href="recycler.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <header>
+        <h1>Recycler Management</h1>
+    </header>
+
+    <div class="container">
+        <section class="recycler-overview">
+            <h2>Authorized Recyclers</h2>
+            <p>Manage the list of recyclers who are authorized to handle e-waste from our system.</p>
+            <button class="add-recycler-button" onclick="document.getElementById('add-recycler-form').classList.toggle('hidden');">Add Recycler</button>
+        </section>
+
+        <section id="add-recycler-form" class="hidden">
+            <h3>Add New Recycler</h3>
+            <form>
+                <label for="recycler-name">Recycler Name:</label>
+                <input type="text" id="recycler-name" name="recycler-name" required>
+
+                <label for="recycler-email">Email:</label>
+                <input type="email" id="recycler-email" name="recycler-email" required>
+
+                <label for="recycler-phone">Phone Number:</label>
+                <input type="text" id="recycler-phone" name="recycler-phone" required>
+
+                <label for="recycler-address">Address:</label>
+                <textarea id="recycler-address" name="recycler-address" rows="4" required></textarea>
+
+                <button type="submit" class="submit-button">Add Recycler</button>
+            </form>
+        </section>
+
+        <section class="recycler-list">
+            <h3>Recycler List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Green Recyclers</td>
+                        <td>green@example.com</td>
+                        <td>+1234567890</td>
+                        <td>123 Green St, Eco City</td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Additional recycler records here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

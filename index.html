@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="index.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <h1>Your E-Waste Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#donate">Donate E-Waste</a></li>
+            <li><a href="#check-status">Check Status</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#user-details">Submit Details</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2 class="highlight">Welcome to Our E-Waste Management System</h2>
+        <p class="highlight">Manage your e-waste efficiently and contribute to a sustainable future.</p>
+    </section>
+
+    <section id="combined-box">
+        <div id="donate">
+            <h2>Donate Your E-Waste</h2>
+            <form name="donation-form" method="post" action="userdetails.php">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemType">Item Type:</label>
+                    <input type="text" name="itemType" required>
+                </div>
+                <div class="form-group">
+                    <label for="condition">Condition:</label>
+                    <select id="condition" name="condition" required>
+                        <option value="working">Working</option>
+                        <option value="refurbished">Refurbished</option>
+                        <option value="not-working">Not Working</option>
+                    </select>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+            <p id="donation-id-message"></p>
+        </div>
+
+        <div id="check-status">
+            <h2>Check Your Donation Status</h2>
+            <form id="status-form">
+                <label for="donation-id">Enter Donation ID:</label>
+                <input type="text" id="donation-id" name="donation-id" required>
+                <button type="submit">Check Status</button>
+            </form>
+            <div id="status-result">
+                <!-- Donation status will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Your Details section -->
+    <section id="details-box">
+        <h2>Submit Your Details</h2>
+        <form id="user-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your E-Waste Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

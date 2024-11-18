@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner's Dashboard</title>
+    <link rel="stylesheet" href="owner.css"> <!-- Link to your CSS file -->
+    <script src="owner.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+
+    <header>
+        <h1>Welcome, Owner!</h1>
+    </header>
+
+    <div class="main-container">
+        <section class="dashboard">
+            <h2>Dashboard Overview</h2>
+            <p>Manage all aspects of the E-Waste Management System efficiently from here.</p>
+        </section>
+
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>Here you can find a summary of recent activities and important notifications.</p>
+        </section>
+
+        <section class="widgets">
+            <div class="widget">
+                <h3>Recent Submissions</h3>
+                <p>View the latest user submissions and their statuses.</p>
+                <button id="view-submissions-button" class="button" onclick="window.location.href='donation.html'">View Submissions</button>
+            </div>
+            <div class="widget">
+                <h3>Recycler Management</h3>
+                <p>Manage the list of authorized recyclers and their details.</p>
+                <a id="manage-recyclers-link" href="#" class="button">Manage Recyclers</a>
+            </div>
+            <div class="widget">
+                <h3>Art Recyclers</h3>
+                <p>Explore how recycled materials are being used in art projects.</p>
+                <a href="/art-recyclers" class="button">Explore Art Recyclers</a>
+            </div>
+        </section>
+
+        <section id="submissions-section" class="hidden">
+            <h2>User Submissions</h2>
+            <div id="submissions-list">
+                <!-- User details will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

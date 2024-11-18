@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('recycling1.jpg'); /* Add your image path */
+    background-size:  2200px 950px; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    min-height: 100vh; /* Ensure it covers the full height */
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent header */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the dashboard and content horizontally */
+    margin: 20px;
+}
+
+.dashboard {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for better visibility */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    animation: fadeIn 1s; /* Animation */
+}
+
+.overview {
+    background: rgba(234, 242, 242, 0.9); /* Semi-transparent light color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    animation: fadeIn 1s; /* Animation */
+}
+
+.widgets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the widgets horizontally */
+}
+
+.widget {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.widget h3 {
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#submissions-section {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#submissions-list {
+    text-align: left;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
